@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>McDonald's: What Actually Made It More Profitable</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+  :root {
+    --black: #27251F;
+    --black-soft: #4A4740;
+    --white: #FFFFFF;
+    --panel: #F7F8FA;
+    --red: #DA291C;
+    --gold: #FFC72C;
+    --grey: #6B6862;
+    --line: #E4E1DA;
+    --green: #00875A;
+    --red-neg: #C0392B;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--white);
+    color: var(--black);
+    padding: 48px 56px;
+  }
+  .page { max-width: 780px; margin: 0 auto; }
+
+  .label { font-size: 12.5px; color: var(--red); font-weight: 600; margin-bottom: 8px; }
+  h1 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.35;
+    max-width: 660px;
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+  }
+  .subhead { font-size: 15px; color: var(--black-soft); max-width: 640px; margin-bottom: 14px; line-height: 1.55; }
+  .byline { font-size: 12.5px; color: var(--grey); padding-bottom: 18px; border-bottom: 3px solid var(--gold); margin-bottom: 26px; }
+
+  .stat-strip {
+    display: flex;
+    background: var(--panel);
+    border-radius: 4px;
+    padding: 18px 0;
+    margin-bottom: 30px;
+  }
+  .stat { flex: 1; padding: 0 22px; border-left: 1px solid var(--line); }
+  .stat:first-child { border-left: none; }
+  .stat .stat-num { font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 600; color: var(--black); }
+  .stat .stat-label { font-size: 11px; color: var(--grey); margin-top: 4px; }
+  .stat .stat-sub { font-size: 9.5px; color: var(--grey); margin-top: 1px; }
+
+  .section { margin-bottom: 26px; }
+  .section h2 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--black);
+  }
+  .section p { font-size: 13.5px; line-height: 1.7; color: var(--black-soft); max-width: 660px; }
+
+  .driver-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 11px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 13px;
+  }
+  .driver-row .driver-name { font-weight: 700; width: 175px; flex-shrink: 0; padding-top: 1px; }
+  .driver-row .driver-val { font-family: 'JetBrains Mono', monospace; width: 55px; flex-shrink: 0; font-weight: 600; padding-top: 1px; }
+  .driver-row .driver-val.pos { color: var(--green); }
+  .driver-row .driver-val.neg { color: var(--red-neg); }
+  .driver-row .driver-desc { color: var(--black-soft); font-size: 13px; line-height: 1.5; }
+
+  .callout {
+    background: #FFF9E8;
+    border-left: 3px solid var(--gold);
+    padding: 14px 18px;
+    border-radius: 0 3px 3px 0;
+    font-size: 13.5px;
+    line-height: 1.7;
+    color: var(--black);
+    margin-top: 4px;
+  }
+  .callout strong { color: var(--red); }
+
+  .toolset { display: flex; flex-wrap: wrap; margin-top: 6px; }
+  .tool-tag {
+    font-size: 12px;
+    padding: 7px 14px;
+    background: var(--black);
+    color: var(--white);
+    border-radius: 3px;
+    font-weight: 500;
+    margin: 0 10px 10px 0;
+  }
+
+  footer {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 3px solid var(--black);
+    display: flex;
+    justify-content: space-between;
+    font-size: 11.5px;
+    color: var(--grey);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="label">Portfolio Project</div>
+  <h1>McDonald's got more profitable last year. The reason isn't what most people would guess.</h1>
+  <div class="subhead">Its international business simply grew into a bigger slice of the company. A much smaller licensing business became dramatically more profitable per dollar. The U.S., its biggest and most familiar market, actually held margin back.</div>
+  <div class="byline">By Kaushal Jaiswal. Built from McDonald's own FY2025 financial filings.</div>
+
+  <div class="stat-strip">
+    <div class="stat">
+      <div class="stat-num">$26.9B</div>
+      <div class="stat-label">Revenue, 2025</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">46.1%</div>
+      <div class="stat-label">Profit margin, 2025</div>
+      <div class="stat-sub">up from 45.2%</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">$172B</div>
+      <div class="stat-label">What the business is worth</div>
+      <div class="stat-sub">by discounted cash flow</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">6.85%</div>
+      <div class="stat-label">Discount rate used</div>
+      <div class="stat-sub">WACC</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>What actually moved the margin</h2>
+    <div class="driver-row">
+      <div class="driver-name">International: bigger, not better</div>
+      <div class="driver-val pos">+0.94pt</div>
+      <div class="driver-desc">This segment's own profitability barely changed. What changed is that it now makes up more of McDonald's total revenue than it used to, 50.7% versus 48.7% a year earlier, and it happens to be a healthier-margin business than the U.S.</div>
+    </div>
+    <div class="driver-row">
+      <div class="driver-name">Licensing: better, not bigger</div>
+      <div class="driver-val pos">+0.64pt</div>
+      <div class="driver-desc">This is the smaller segment covering licensed and developmental markets. Its share of revenue actually shrank, but its profit margin rose from 1.2% to 8.4%, nearly seven times higher.</div>
+    </div>
+    <div class="driver-row">
+      <div class="driver-name">The U.S.: neither</div>
+      <div class="driver-val neg">-0.51pt</div>
+      <div class="driver-desc">McDonald's home market lost ground on both counts, a slightly smaller share of total revenue, and a slightly thinner margin.</div>
+    </div>
+    <div class="driver-row">
+      <div class="driver-name">Everything else</div>
+      <div class="driver-val neg">-0.15pt</div>
+      <div class="driver-desc">Small offsetting moves in the other two segments, roughly canceling out.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Why it matters</h2>
+    <p>People often describe McDonald's as a real estate and licensing company that happens to sell burgers. This is the first time that idea gets an actual number attached to it.</p>
+    <div class="callout">
+      Just over half of last year's margin improvement came from the business <strong>getting bigger</strong> in a market that was already more profitable, not from anyone <strong>running restaurants better</strong>. Those are different things to bet on continuing, and the difference is the kind of thing an investor or a hiring manager would actually want pointed out, not buried in a spreadsheet.
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Built with</h2>
+    <div class="toolset">
+      <span class="tool-tag">A full 3-statement financial model</span>
+      <span class="tool-tag">A segment-by-segment profit breakdown</span>
+      <span class="tool-tag">A business valuation, with a live dashboard</span>
+      <span class="tool-tag">Real McDonald's SEC filings</span>
+    </div>
+  </div>
+
+  <footer>
+    <div>McDonald's Portfolio Project</div>
+    <div>Full model, dashboard, and writeup in accompanying files</div>
+  </footer>
+
+</div>
+</body>
+</html>
