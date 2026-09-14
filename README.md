@@ -2,6 +2,8 @@
 
 *A financial model and analysis built from McDonald's own public filings, looking at where its 2025 profit improvement actually came from, and what the business is worth.*
 
+**By Kaushal Jaiswal** — [LinkedIn](https://linkedin.com/in/kaushaljaiswal) · [GitHub](https://github.com/kaushaljaiswal-fpa)
+
 ---
 
 ## What is this?
