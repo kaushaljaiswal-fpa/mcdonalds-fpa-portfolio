@@ -2,7 +2,11 @@
 
 *A financial model and analysis built from McDonald's own public filings, looking at where its 2025 profit improvement actually came from, and what the business is worth.*
 
-**By Kaushal Jaiswal** — [LinkedIn](https://linkedin.com/in/kaushaljaiswal) · [GitHub](https://github.com/kaushaljaiswal-fpa)
+**By Kaushal Jaiswal** · [LinkedIn](https://www.linkedin.com/in/kaushal-jaiswal) · [GitHub](https://github.com/kaushaljaiswal-fpa)
+
+**Skills demonstrated:** 3-statement financial modeling · DCF valuation · Segment and margin analysis · Power BI (DAX) · Power Query automation · SEC filings research
+
+**Quick links:** [Live one-pager](https://kaushaljaiswal-fpa.github.io/mcdonalds-fpa-portfolio/one-pager.html) · [Excel model](./McDonalds_3Statement_Model.xlsx) · [Power BI dashboard](./McDonalds_Dashboard.pbix)
 
 ---
 
