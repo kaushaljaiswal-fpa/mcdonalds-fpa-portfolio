@@ -1,9 +1,3 @@
----
-title: "McDonald's: What Actually Made It More Profitable"
-author: "Kaushal Jaiswal"
-date: "Portfolio Project"
----
-
 # McDonald's: What Actually Made It More Profitable
 
 *A financial model and analysis built from McDonald's own public filings, looking at where its 2025 profit improvement actually came from, and what the business is worth.*
@@ -42,6 +36,7 @@ Like any model, this one relies on a handful of simplifying assumptions, held fl
 |---|---|
 | `McDonalds_3Statement_Model.xlsx` | The full financial model. Seven tabs, covering the linked financial statements, the supporting schedules behind them, the segment breakdown behind the finding above, and the valuation. |
 | `McDonalds_Dashboard.pbix` | An interactive Power BI dashboard built directly from the same model. |
+| `Dashboard_Export.pdf` | A static export of the Power BI dashboard, for viewing without installing Power BI. |
 | `one-pager.html` / `one-pager.png` | A one-page visual summary of the finding above. [View it live here.](https://kaushaljaiswal-fpa.github.io/mcdonalds-fpa-portfolio/one-pager.html) |
 
 A reviewer short on time could read just the one-page summary. Someone who wants to see the actual mechanics can open the Excel file, starting with the Cover tab, which indexes every section, then the Segment and Margin Analysis tab, where the finding above is calculated line by line and reconciles exactly to McDonald's own reported numbers.
